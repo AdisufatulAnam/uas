@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         statusLdr = findViewById<View>(R.id.cut) as TextView
         statuspir = findViewById<View>(R.id.cut) as TextView
         dref = FirebaseDatabase.getInstance().getReference()
+        //pada barisan ini merupakan barisan code untuk mengambil data seracar realtime dri firbase , dan juga fungsi dari tombol untuk menghidupkan led apa bila cahaya dirungan dikira nya kurang
         dref!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 valueLdr = dataSnapshot.child("Node1/ldr").getValue().toString()
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onCancelled(databaseError: DatabaseError) {}
         })
+        //pada barisan ini merupakan fungsi dari batton led 1 untuk mengatur nyala atau hidupnyalampu tersebut.
         buttonLampu1!!.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 val lampu1Ref: DatabaseReference =
@@ -60,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                 lampu1Ref.setValue(0)
             }
         }
+        //pada barisan ini merupakan fungsi dari batton led 2 untuk mengatur nyala atau hidupnyalampu tersebut.
         buttonLampu2!!.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 val lampu2Ref: DatabaseReference =
