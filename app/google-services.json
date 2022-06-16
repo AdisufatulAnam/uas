@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "948463702424",
+    "firebase_url": "https://nodemculdr-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nodemculdr",
+    "storage_bucket": "nodemculdr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948463702424:android:3695c2999cca06fa79dbed",
+        "android_client_info": {
+          "package_name": "com.example.uas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948463702424-5joi2m8utp20eunk6sfglssg237v38c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZilRP9gNk68m3XYyMSW16FinGnkbowbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948463702424-5joi2m8utp20eunk6sfglssg237v38c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
